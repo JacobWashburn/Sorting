@@ -1,3 +1,6 @@
+import random
+
+
 # TO-DO: Complete the selection_sort() function below
 def selection_sort(arr):
     total = 0
@@ -59,8 +62,10 @@ def count_sort(arr, maximum = -1):
 test_arr = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 test_arr2 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 test_arr3 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
-test_arr4 = [1, 0, 5, 8, 4, 2, 9, 6, 0, 3, 7, 2, 9, 6, 0, 3, 7]
+test_arr4 = [1, 0, 5, 4, 2, 9, 6, 0, 3, 7, 2, 9, 6, 0, 3, 7]
+# test_arr5 = random.sample(range(2000000), 500000)
 print(selection_sort(test_arr))
 print(bubble_sort(test_arr2))
 print(count_sort(test_arr3))
 print(count_sort(test_arr4))
+# print(count_sort(test_arr5))
