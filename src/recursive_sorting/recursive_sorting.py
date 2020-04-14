@@ -18,7 +18,7 @@ def merge(arr_a, arr_b):
         print('merged_arr:', merged_arr, '-- remainder:', remainder)
         merged_arr.append(remainder[0])
         remainder.pop(0)
-    print('\n---- start of merge_sort ----')
+    print('\n')
     return merged_arr
 
 
@@ -32,12 +32,12 @@ def merge_sort(arr):
 
     recursive_low = merge_sort(arr[:mid])
     recursive_high = merge_sort(arr[mid:])
-    
+
     return merge(recursive_low, recursive_high)
 
 
 test_arr = [1, 5, 8, 4, 2, 9, 6, 0, 7, 3, 4]
-print(merge_sort(test_arr))
+print('Starting point:', test_arr, '\nFinal result:  ', merge_sort(test_arr))
 
 
 # STRETCH: implement an in-place merge sort algorithm
