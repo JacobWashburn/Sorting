@@ -36,7 +36,7 @@ def merge_sort(arr):
     return merge(recursive_low, recursive_high)
 
 
-test_arr = [1, 5, 8, 4, 2, 9, 6, 0, 7, 3, 4]
+test_arr = [1, 5, 8, 4, 2, 9, 6, 0, 7, 3]
 print('Starting point:', test_arr, '\nFinal result:  ', merge_sort(test_arr))
 
 
